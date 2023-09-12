@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tutorial-video.css">
+  <link rel="stylesheet" href="js/script.js">
+  <!-- cdnlink -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <title>Make up tutorial</title>
+</head>
+<body>
+  <main>
+    <section>
+      <!--breadcrumb-->
+      <div class="breadcrumb">
+        <a href="make-up-tutorials.html">Make-up tutorials</a>
+        <iconify-icon id="icon-greater" icon="fa6-solid:greater-than"></iconify-icon>
+        <span>10 MINUTE MAKEUP TUTORIAL FOR BEGINNER.</span>
+      </div>
+      <!-- video -->
+      <div class="video-container">
+        <video controls>
+          <source src="/Assest/Video/makeup_tutorial.mp4">
+        </video>
+      </div>
+      <!-- avt, title, author, time, follow -->
+      <div class="description-container">
+        <div class="about-video">
+          <div class="img">
+            <img src="Assest/Image/makeuptutorials/cmt-1.png" alt="">
+          </div>
+
+          <div class="video-content">
+          <h5>10 MINUTE MAKEUP TUTORIAL FOR BEGINNER.</h5>
+          <div class="btn-follow-container">
+            <span id="author">Karen Abarn</span>
+            <button id="btn-follow"><iconify-icon id="icon-follow" icon="lucide:smile-plus" width="18" height="18"></iconify-icon>Follow</button>
+          </div>
+          <span id="time">21:00 | April 21, 2021</span>
+          </div>
+
+          <div class="more">
+            <iconify-icon icon="iconamoon:menu-kebab-vertical-circle-fill" style="color: rgba(255, 198, 199, 0.5);" width="48" height="48"></iconify-icon>
+          </div>
+        </div>
+      </div>
+        <!-- video react -->
+
+        <div class="video-react">
+          <div class="view">
+            <div id="btn-view">
+              <iconify-icon icon="mdi:eye" style="color: rgba(0, 0, 0, 0.5);" width="29" height="20"></iconify-icon>10k
+            </div>
+          </div>
+          <div class="cmt">
+            <div id="btn-cmt">
+              <iconify-icon icon="mingcute:comment-fill" style="color: rgba(0, 0, 0, 0.5);" width="26" height="26"></iconify-icon>20
+            </div>
+          </div>
+          <div class="share">
+            <div id="btn-share">
+              <iconify-icon icon="ic:baseline-share" style="color: rgba(0, 0, 0, 0.5);" width="30" height="33"></iconify-icon>200
+            </div>
+            <div id="btn-share-link">
+              <iconify-icon icon="ph:share-bold" style="color: white;" width="22" height="22"></iconify-icon>
+            </div>
+          </div>
+          <div class="like">
+            <div id="btn-like-icon">
+              <iconify-icon icon="ph:heart-fill" style="color: rgba(0, 0, 0, 0.5);" width="24" height="21"></iconify-icon>
+            </div>
+            <div id="btn-like">
+              <iconify-icon icon="ph:heart" style="color: white;" width="28" height="28"></iconify-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- video description -->
+        <div class="video-description">
+          <h5>Video description</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id tortor sed odio pulvinar semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vel urna arcu. Aenean id diam aliquet, varius ipsum eu, feugiat dui. Quisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id tortor sed odio pulvinar semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris vel urna arcu. Aenean id diam aliquet, varius ipsum eu, feugiat dui. Quisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id tortor sed odio pulvinar semper. Pellentesque habitant morbi tristique senectus et netus
+          </p>
+        </div>
+        <!-- make up product -->
+
+
+    <div class="make-up-product-container">
+      <div class="make-up-product">
+        <div class="title">
+          <h5>Make - up products</h5>
+          <p>The products come from reputable brands and are used by the make-up artist in the video</p>
+        </div>
+<!--
+        <div class="product-card">
+          <div class="card-content">
+            <div class="image">
+              <img src="Assest/Image/makeuptutorials/product-1.png" alt="">
+            </div>
+
+            <div class="name">
+              <span>Foundation</span>
+            </div>
+            <div class="brand">
+              <span>Nars</span>
+            </div>
+            <div class="link-to-buy">
+              <i><iconify-icon icon="solar:link-broken" style="color: #fb797f;" width="22" height="22"></iconify-icon></i>
+              <a href="https://shopee.vn/-M%E1%BB%9Bi-2022-Kem-n%E1%BB%81n-NARS-Light-Reflecting-Foundation-30ml-%C4%91%E1%BB%A7-box-i.526900.13690433601?sp_atk=013202da-f7fc-4d0f-91f9-e50f0434de6a&xptdk=013202da-f7fc-4d0f-91f9-e50f0434de6a">Link to buy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+<!-- Các sản phẩm -->
+<button type="button" class="btn-prev" oncanplay="prev()"><img src="Assest/Image/makeuptutorials/prev.png" alt=""></button>
+<button type="button" class="btn-next" oncanplay="next()"><img src="Assest/Image/makeuptutorials/next.png" alt=""></button>
+<div class="carousel-container" item-display-d="4" item-display-t="3" item-display-m="1">
+  <div class="carousel-wrapper">
+    <div class="item">
+      <img src="Assest/Image/makeuptutorials/product-1.png" alt="">
+    </div>
+    <div class="item">
+      <img src="Assest/Image/makeuptutorials/product-1.png" alt="">
+    </div>
+    <div class="item">
+      <img src="Assest/Image/makeuptutorials/product-1.png" alt="">   
+    </div>
+    <div class="item">
+      <img src="Assest/Image/makeuptutorials/product-3.png" alt="">
+    </div>
+    <div class="item">
+      <img src="Assest/Image/makeuptutorials/product-3.png" alt="">
+    </div>
+    <div class="item">
+      <img src="Assest/Image/makeuptutorials/product-3.png" alt="">   
+    </div>
+  </div>
+</div>
+
+
+<!-- comment -->
+<div class="cmt-container">
+  <div class="cmt-head">
+    <h5>Comments</h5>(20)
+    <span>See more</span>
+  </div>
+
+  <div class="cmt-content">
+    <div class="cmt-item">
+      <img src="Assest/Image/makeuptutorials/cmt-1.png" alt="">
+      <div class="name">
+        <span>Corey Gouse</span>
+      </div>
+      <div class="cmt-time">
+        <iconify-icon icon="bi:clock" style="color: #b3b3b3;" width="20" height="20" flip="horizontal,vertical"></iconify-icon>
+        <span>Thu, 8/20/20, 3:44:35 PM</span>
+      </div>
+      <div class="content">
+        <span>Pretty colors too!</span>
+      </div>
+    </div>
+
+    <div class="cmt-item">
+      <img src="Assest/Image/makeuptutorials/cmt-2.png" alt="">
+      <div class="name">
+        <span>Miracle Baptista</span>
+      </div>
+      <div class="cmt-time">
+        <iconify-icon icon="bi:clock" style="color: #b3b3b3;" width="20" height="20" flip="horizontal,vertical"></iconify-icon>
+        <span>Thu, 9/2/19, 4:43:41 PM</span>
+      </div>
+      <div class="content">
+        <span>Flipping the cassette while reading/examining the fold-out cover 😁</span>
+      </div>
+    </div>
+
+    <div class="cmt-item">
+      <img src="Assest/Image/makeuptutorials/cmt-3.png" alt="">
+      <div class="name">
+        <span>Ashlynn Geidt</span>
+      </div>
+      <div class="cmt-time">
+        <iconify-icon icon="bi:clock" style="color: #b3b3b3;" width="20" height="20" flip="horizontal,vertical"></iconify-icon>
+        <span>Mon, 5/25/19, 2:53:37 PM</span>
+      </div>
+      <div class="content">
+        <span>Great choice of Acronym AF1’s 👌🏼</span>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+  </main>
+</body>
+</html>
