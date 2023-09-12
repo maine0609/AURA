@@ -12,6 +12,8 @@ window.addEventListener("scroll",()=>{
 })
 
 
+
+
 //pagination
 const video =[
   {}
